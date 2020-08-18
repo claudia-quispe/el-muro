@@ -8,8 +8,8 @@
             <a href="#" class="brand-logo">El muro</a>
         </div>
     </nav>
+    <h5 v-if="usuario" class="brand-logo">Hola, {{ usuario.nombre }}!</h5>
     <router-view />
-    <h5 v-if="usuario" class="brand-logo">Bienvenido, {{ usuario.nombre }}!</h5>
   </div>
 </template>
 
@@ -40,8 +40,8 @@ export default {
   color: black;
   
 }
-.welcome-1 {
-  width: 80%;
+.welcome {
+  width: 48%;
   padding-top: 10px;
 }
 #nav-mobile {
@@ -52,5 +52,6 @@ export default {
 }
 .h5 {
   padding: 20px;
+  margin-top: 20px;
 }
 </style>

@@ -31,6 +31,9 @@ const store = new Vuex.Store({
     //mutacion para cambia el "error"
     set_error(state, nuevo_error){
       state.error = nuevo_error;
+    },
+    increment(state) {
+      state.likes++
     }
   },
   // las acciones se utilizan cuando necesito crear una funcion asincrona
